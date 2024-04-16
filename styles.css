@@ -7,6 +7,22 @@ body {
   font-family: "roboto", sans-serif;
 }
 
+p {
+  color: #1f2937;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: extra-bold;
+  color: #f9faf8;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: extra-bold;
+  color: #1f2937;
+}
+
 button {
   border-style: none;
   font-size: 13px;
@@ -22,7 +38,7 @@ button {
 .header {
   background-color: #1f2937;
   color: #f9faf8;
-  padding: 20px 20%;
+  padding: 20px 12%;
   display: flex;
   justify-content: space-between;
 }
@@ -33,10 +49,6 @@ button {
   align-items: last baseline;
 }
 
-.header-link {
-  justify-content: flex-end;
-}
-
 .header-logo {
   width: 200px;
   height: auto;
@@ -45,48 +57,68 @@ button {
 .hero-section {
   background-color: #1f2937;
   color: #f9faf8;
-  padding: 20px 20%;
-  display: flexbox;
+  padding: 100px 12%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 .hero-text {
   width: 450px;
 }
 
-.hero-section h1 {
-  font-size: 48px;
-  font-weight: extra-bold;
-  color: #f9faf8;
-  margin-top: 80px;
-}
-
-.hero-section p {
+.hero-secondarytext {
   font-size: 18px;
   color: #e5e7eb;
   margin-top: 10px;
   line-height: 150%;
 }
 
-.hero-section button {
-  margin-top: 20px;
+.hero-button {
+  margin: 20px 0 0 0;
 }
-.image-placeholder {
-  display: inline-block;
+
+.hero-image {
   background-color: grey;
-  padding: 100px 150px;
+  height: 250px;
+  margin-left: 100px;
+  object-fit: cover;
+  object-position: 0 10%;
+  flex-grow: 1;
 }
+
 .info-section {
+  padding-bottom: 50px;
+}
+
+.info-maintext {
+  text-align: center;
+  margin: 50px auto;
 }
 
 .services-container {
-  display: flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
 }
 
-.info-section h2 {
-  font-size: 36px;
-  font-weight: extra-bold;
-  color: #1f2937;
+.service-image {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-style: solid;
+  border-color: #3882f6;
+  border-width: 5px;
+  border-radius: 10px;
+}
+
+.service-subtext {
+  width: 150px;
   text-align: center;
+  text-wrap: wrap;
+  margin: 15px auto;
 }
 
 .quote-section {
@@ -116,18 +148,18 @@ button {
   padding: 30px;
 }
 
-.cta-section h3 {
+.cta-maintext {
   color: #f9faf8;
   font-size: 20px;
   font-weight: bold;
 }
 
-.cta-section p {
+.cta-secondarytext {
   color: #f9faf8;
   font-size: 15px;
 }
 
-.cta-section button {
+.cta-button {
   border-color: #f9faf8;
   border-width: 2px;
 }
